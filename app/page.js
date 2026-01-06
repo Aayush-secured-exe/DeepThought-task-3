@@ -1,3 +1,4 @@
+import AllOrganizations from "./components/AllOrganizations/AllOrganizations";
 import ProfileHeader from "./components/ProfileHeader";
 import Memberships from "./components/memberships/Memberships";
 import Organization from "./components/organization/Organization";
@@ -8,6 +9,7 @@ export default function Home() {
       <ProfileHeader />
       <Organization />
       <Memberships />
+      <AllOrganizations/>
     </main>
   );
 }
