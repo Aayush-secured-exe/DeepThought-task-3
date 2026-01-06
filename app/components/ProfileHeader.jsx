@@ -22,7 +22,7 @@ function ProfileHeader() {
             />
           </div>
         </div>
-        <div className="flex items-center justify-between md:pl-34">
+        <div className="flex flex-wrap items-center justify-between md:pl-34">
           <div>
             <div className="flex items-center gap-2">
               <h1 className="md:text-lg text-base font-semibold text-gray-900">
@@ -36,11 +36,11 @@ function ProfileHeader() {
               <Mail className="md:h-4 h-3" />aayushshaw646456@gmail.com
             </p>
           </div>
-          <div className="md:flex md:gap-3 ml-4">
-            <button className="md:px-4 px-2 py-2 rounded-md bg-blue-600 text-white text-xs md:text-sm font-medium hover:bg-blue-700 transition mb-1 md:m-0">
+          <div className="flex gap-3 md:ml-4 mt-3">
+            <button className="inline-block md:px-4 px-2 py-2 rounded-md bg-blue-600 text-white text-xs md:text-sm font-medium hover:bg-blue-700 transition">
               View Plans
             </button>
-            <button className="md:px-4 px-2 py-2 rounded-md border border-blue-600 text-blue-600 text-xs md:text-sm font-medium hover:bg-blue-50 transition">
+            <button className="inline-block md:px-4 px-2 py-2 rounded-md border border-blue-600 text-blue-600 text-xs md:text-sm font-medium hover:bg-blue-50 transition">
               View Reports
             </button>
           </div>
