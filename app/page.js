@@ -5,7 +5,7 @@ import Organization from "./components/organization/Organization";
 
 export default function Home() {
   return (
-    <main className="min-h-screen m-4">
+    <main className="min-h-screen md:m-4">
       <ProfileHeader />
       <Organization />
       <Memberships />
