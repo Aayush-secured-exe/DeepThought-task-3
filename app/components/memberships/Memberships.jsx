@@ -1,6 +1,7 @@
 import React from "react";
 import { LayoutGrid } from "lucide-react";
 import Member from "./Member";
+import { membership } from "../DATA/data";
 
 function Memberships() {
   return (
@@ -14,7 +15,7 @@ function Memberships() {
           <h2 className="text-lg font-semibold text-gray-900">
             Your Memberships
           </h2>
-          <p className="text-sm text-gray-500">You have 1 active membership</p>
+          <p className="text-sm text-gray-500">You have {membership.length} active membership</p>
         </div>
       </div>
 

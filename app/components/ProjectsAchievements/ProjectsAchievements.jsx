@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Folder, GitCommit, ChevronRight } from "lucide-react";
 import Achievements from "./Achievements";
+import {Project} from "../DATA/data.js"
 
 function ProjectsAchievements() {
   return (
@@ -11,7 +12,7 @@ function ProjectsAchievements() {
         </div>
 
         <h2 className="text-lg font-semibold text-gray-900">
-          Projects & Achievements
+          {Project.heading}
         </h2>
       </div>
 
@@ -19,18 +20,18 @@ function ProjectsAchievements() {
         <p className="text-sm text-gray-600">
           Recent Project:{" "}
           <span className="font-medium text-gray-900">
-            AI Learning Platform
+            {Project.project}
           </span>
         </p>
 
         <div className="mt-2 h-8 w-full rounded-full bg-gray-200">
           <div
             className="h-8 rounded-full bg-blue-600"
-            style={{ width: "85%" }}
+            style={{ width: `${Project.progress}%` }}
           />
         </div>
 
-        <p className="mt-1 text-right text-xs font-medium text-blue-600">85%</p>
+        <p className="mt-1 text-right text-xs font-medium text-blue-600">{Project.progress}%</p>
       </div>
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -39,7 +40,7 @@ function ProjectsAchievements() {
             <Folder className="h-5 w-5 text-blue-600" />
             <div>
               <p className="text-sm font-medium text-gray-900">Projects</p>
-              <p className="text-xs text-gray-500">2</p>
+              <p className="text-xs text-gray-500">{Project.projectCount}</p>
             </div>
           </div>
 
@@ -51,7 +52,7 @@ function ProjectsAchievements() {
             <GitCommit className="h-5 w-5 text-green-600" />
             <div>
               <p className="text-sm font-medium text-gray-900">Contributions</p>
-              <p className="text-xs text-gray-500">0</p>
+              <p className="text-xs text-gray-500">{Project.contributionCount}</p>
             </div>
           </div>
 

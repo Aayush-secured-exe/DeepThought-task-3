@@ -1,5 +1,6 @@
 import React from 'react'
 import { Building } from "lucide-react";
+import { LC } from '../DATA/data';
 
 function LocationContacts() {
   return (
@@ -14,10 +15,10 @@ function LocationContacts() {
           <Building className="mt-0.5 h-5 w-5 text-gray-600" />
           <div>
             <p className="text-sm font-semibold text-gray-900">
-              Hyderabad, TG
+              {LC.city}
             </p>
             <p className="mt-1 text-sm text-gray-500">
-              Street No. 2, Hyderabad, TG 500007, India
+              {LC.street}
             </p>
           </div>
         </div>
@@ -29,7 +30,7 @@ function LocationContacts() {
         </p>
 
         <p className="mt-4 text-sm text-gray-500">
-          No email addresses available
+          {(!LC.email) ? "No email addresses available" : LC.email}
         </p>
       </div>
 
@@ -39,7 +40,7 @@ function LocationContacts() {
         </p>
 
         <p className="mt-4 text-sm text-gray-500">
-          No phone numbers available
+          {(!LC.phone) ? "No phone numbers available" : LC.phone}
         </p>
       </div>
 

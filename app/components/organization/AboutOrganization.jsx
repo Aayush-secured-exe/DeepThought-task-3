@@ -1,4 +1,5 @@
 import React from 'react'
+import { OrgName, Privilage } from '../DATA/data'
 
 function AboutOrganization() {
   return (
@@ -8,7 +9,7 @@ function AboutOrganization() {
       </p>
 
       <p className="text-sm text-gray-700">
-        DeepThought - Education Technology
+        {OrgName.name} - {Privilage.sector}
       </p>
     </div>
   )
