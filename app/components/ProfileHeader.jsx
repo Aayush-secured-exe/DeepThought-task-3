@@ -12,10 +12,7 @@ function ProfileHeader() {
           className="h-full w-full object-cover"
         />
       </div>
-
-      {/* Content Area */}
       <div className="relative pb-6 pt-6 px-6">
-        {/* Avatar */}
         <div className="absolute -top-12 left-6">
           <div className="h-30 w-30 border-3 border-white rounded-full overflow-hidden bg-gray-100">
             <img
@@ -25,26 +22,20 @@ function ProfileHeader() {
             />
           </div>
         </div>
-
-        {/* Header Row */}
         <div className="flex items-center justify-between pl-34">
-          {/* User Info */}
           <div>
             <div className="flex items-center gap-2">
               <h1 className="text-lg font-semibold text-gray-900">
-                shubhamdubey23042004
+                aayushshaw23042004
               </h1>
               <span className="px-2 py-0.5 text-xs rounded-full bg-gray-100 text-gray-600">
                 #3
               </span>
             </div>
-            
             <p className="text-sm text-gray-500 mt-1 flex gap-1 items-center">
-              <Mail className="h-4" />shubhamdubey23042004@gmail.com
+              <Mail className="h-4" />aayushshaw646456@gmail.com
             </p>
           </div>
-
-          {/* Actions */}
           <div className="flex gap-3">
             <button className="px-4 py-2 rounded-md bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition">
               View Plans
