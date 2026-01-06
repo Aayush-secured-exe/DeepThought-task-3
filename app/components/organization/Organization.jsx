@@ -3,6 +3,8 @@ import OrganizationName from "./OrganizationName";
 import YourPrivilege from "./YourPrivilege";
 import AboutOrganization from "./AboutOrganization";
 import { Building } from "lucide-react";
+import Teams from "./Teams";
+import LocationContacts from "./LocationContacts";
 
 function Organization() {
   return (
@@ -30,6 +32,20 @@ function Organization() {
         </div>
       </div>
       <AboutOrganization />
+      <div>
+        <h3 className="text-base font-semibold text-gray-500 uppercase mb-3">
+          Leadership team
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Teams />
+        </div>
+      </div>
+      <div>
+        <h3 className="text-base font-semibold text-gray-500 uppercase mb-3">
+          Location & contact
+        </h3>
+          <LocationContacts />
+      </div>
     </section>
   );
 }

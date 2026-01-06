@@ -1,4 +1,5 @@
 import ProfileHeader from "./components/ProfileHeader";
+import Memberships from "./components/memberships/Memberships";
 import Organization from "./components/organization/Organization";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="min-h-screen m-4">
       <ProfileHeader />
       <Organization />
+      <Memberships />
     </main>
   );
 }
